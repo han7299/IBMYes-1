@@ -58,7 +58,7 @@ fi
 
 if [ ! -f "$HOME/.bluemix/cfcli/cf" ]; then
     echo "${BLUE}ibmcloud cf install${END}"
-    $IBMCLOUD cf install
+    $IBMCLOUD cf install -v 6.51.0
     $IBMCLOUD target --cf-api 'https://api.us-south.cf.cloud.ibm.com'
 fi
 $IBMCLOUD target --cf
